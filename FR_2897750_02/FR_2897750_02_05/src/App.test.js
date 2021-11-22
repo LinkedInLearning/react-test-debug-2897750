@@ -1,5 +1,5 @@
-import { render, fireEvent } from "@testing-library/react"
-import App from './App'
+import { render, fireEvent, getByRole } from "@testing-library/react"
+import App, { TodoList, TrashButton } from './App'
 
 test('should render App', () => {
     const { container } = render(<App />)
@@ -34,14 +34,25 @@ test('should fire submit event', () => {
     expect(inputNode.value).toBe('');
 })
 
-
-
 test('should render an empty todo list', () => {
     const items = [
         {id: 122, value: 'todo #1', done:false},
         {id: 123, value: 'todo #2', done:false},
     ]
+    const { getByRole, rerender } = render(<TodoList items={items}/>);
+    const list = getByRole('list')
+    expect(list.childNodes).toHaveLength(2)
+    rerender(<TodoList items={[]}/>)
+    expect(list.childNodes).toHaveLength(0)
 })
+
+test('should render trash button if any todo is done', () => {
+    const { getByRole } = render(<App />)
+    render(<TrashButton isVisible />)
+    const button = getByRole('button')
+    expect(button).toBeVisible()
+})
+
 
 
 
