@@ -26,7 +26,6 @@ function reducer(state = initialState, { type, payload }) {
       return {
         items: [...state.items, {id: uid(), value: payload.value, done: false}],
       };
-
     case CHECK_ITEM:
       return {
         items: state.items.map(check),

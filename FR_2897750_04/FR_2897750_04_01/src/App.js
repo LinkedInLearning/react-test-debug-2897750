@@ -53,8 +53,8 @@ function App() {
             onChange={handleOnChange}
           />
         </form>
-        <todoList />
-        <trashButton />
+        <TodoList />
+        <TrashButton />
     </div>
   );
 }
