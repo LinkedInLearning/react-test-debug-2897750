@@ -14,9 +14,8 @@ export const TrashButton = () => {
 
 export const TodoList = () => {
   const [state, dispatch] = useTodosReducer()
-  debugger;
+  console.log(state.items)
   const handleOnClick = (id) => {
-
     dispatch({ type: CHECK_ITEM, payload: {id }})
   }
   return(<ul className="mt-3">
@@ -33,7 +32,7 @@ function App() {
   const inputRef = useRef()
   const [value, setValue] = useState(null)
   const [, dispatch] = useTodosReducer()
-  
+
   const handleOnChange = (e) => setValue(e.target.value)
 
   const handleOnSubmit = (e) => {
@@ -42,6 +41,7 @@ function App() {
     dispatch({ type: ADD_ITEM, payload: { value }})
     inputRef.current.value = ""
     setValue(null) 
+    debugger
     // plus tard vérif avec état avec React devTools
   }
   return (
@@ -56,8 +56,8 @@ function App() {
             onChange={handleOnChange}
           />
         </form>
-        <todoList />
-        <trashButton />
+        <TodoList />
+        <TrashButton />
     </div>
   );
 }

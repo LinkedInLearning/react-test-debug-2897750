@@ -23,9 +23,8 @@ function reducer(state = initialState, { type, payload }) {
   function remove(item) { return !item.done}
   switch (type) {
     case ADD_ITEM:
-      debugger;
       return {
-        items: [...state.items, {id: uid(), value: payload, done: false}],
+        items: [...state.items, {id: uid(), value: payload.value, done: false}],
       };
 
     case CHECK_ITEM:
