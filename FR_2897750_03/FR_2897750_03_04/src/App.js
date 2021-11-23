@@ -2,7 +2,7 @@ import React, { useState, useMemo, useRef } from "react";
 import { useTodosReducer, CHECK_ITEM, ADD_ITEM, REMOVE_ITEMS} from './context';
 import './App.css';
 
-export const TrashButton = () => {
+export const trashButton = () => {
   const [state, dispatch] = useTodosReducer()
   const remove = () =>  dispatch({ type: REMOVE_ITEMS })
   const isVisible = useMemo(() => {
@@ -30,12 +30,13 @@ export const TodoList = () => {
 
 function App() {
   const inputRef = useRef()
-  const [value, setValue] = useState(null)
+
   const [, dispatch] = useTodosReducer()
   
   const handleOnChange = (e) => setValue(e.target.value)
 
   const handleOnSubmit = (e) => {
+    const [value, setValue] = useState(null)
     e.preventDefault()
     if (!value) { return false }
     dispatch({ type: ADD_ITEM, payload: { value }})
