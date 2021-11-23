@@ -14,7 +14,7 @@ export const TrashButton = () => {
 
 export const TodoList = () => {
   const [state, dispatch] = useTodosReducer()
-  console.log(state.items)
+  console.table(state.items)
   const handleOnClick = (id) => {
     dispatch({ type: CHECK_ITEM, payload: {id }})
   }
@@ -37,7 +37,10 @@ function App() {
 
   const handleOnSubmit = (e) => {
     e.preventDefault()
-    if (!value) { return false }
+    if (!value) { 
+      console.error('no available value')
+      return false 
+    }
     dispatch({ type: ADD_ITEM, payload: { value }})
     inputRef.current.value = ""
     setValue(null) 

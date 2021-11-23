@@ -14,7 +14,7 @@ export const TrashButton = () => {
 
 export const TodoList = () => {
   const [state, dispatch] = useTodosReducer()
-  console.log(state.items)
+  console.dir(state.items)
   const handleOnClick = (id) => {
     dispatch({ type: CHECK_ITEM, payload: {id }})
   }
