@@ -25,7 +25,7 @@ function reducer(state = initialState, { type, payload }) {
     case ADD_ITEM:
       debugger;
       return {
-        items: [...state.items, {id: uid(), value: payload.value, done: false}],
+        items: [...state.items, {id: uid(), value: payload, done: false}],
       };
 
     case CHECK_ITEM:
