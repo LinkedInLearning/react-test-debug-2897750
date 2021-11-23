@@ -40,7 +40,6 @@ function App() {
     dispatch({ type: ADD_ITEM, payload: { value }})
     inputRef.current.value = ""
     setValue(null) 
-    // plus tard vérif avec état avec React devTools
   }
   return (
     <div className="App">
