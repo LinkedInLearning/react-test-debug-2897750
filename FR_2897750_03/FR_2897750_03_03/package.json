@@ -1,5 +1,5 @@
 {
-  "name": "react-lint",
+  "name": "rtl",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -37,6 +37,6 @@
   },
   "devDependencies": {
     "eslint": "^7.32.0",
-    "eslint-plugin-react": "^7.27.1"
+    "eslint-plugin-react": "^7.27.0"
   }
 }
