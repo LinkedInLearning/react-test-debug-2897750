@@ -37,5 +37,5 @@ La branche master correspond au code à la fin de la formation.
 
  Retrouvez [Sandy Ludosky](https://www.linkedin.com/learning/instructors/sandy-ludosky) sur LinkedIn Learning.
 
-[lil-course-url]: https://www.linkedin.com/learning/building-a-graphql-project-with-react-js
-[lil-thumbnail-url]: https://cdn.lynda.com/course/2875095/2875095-1615224395432-16x9.jpg	
+[lil-course-url]: https://www.linkedin.com/learning/react-tester-et-debugger
+[lil-thumbnail-url]: https://media-exp1.licdn.com/dms/image/C4E0DAQHvtX4hlR3KNg/learning-public-crop_675_1200/0/1642774795329?e=1643454000&v=beta&t=D7XuFIH-W83hfJnyAvhA5MWHqOyzuDpE6pKQnfelsUE
