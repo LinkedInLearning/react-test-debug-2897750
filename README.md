@@ -38,4 +38,4 @@ La branche master correspond au code à la fin de la formation.
  Retrouvez [Sandy Ludosky](https://www.linkedin.com/learning/instructors/sandy-ludosky) sur LinkedIn Learning.
 
 [lil-course-url]: https://www.linkedin.com/learning/react-tester-et-debugger
-[lil-thumbnail-url]: https://media-exp1.licdn.com/dms/image/C4E0DAQHvtX4hlR3KNg/learning-public-crop_675_1200/0/1642774795329?e=1643454000&v=beta&t=D7XuFIH-W83hfJnyAvhA5MWHqOyzuDpE6pKQnfelsUE
+[lil-thumbnail-url]: https://media-exp1.licdn.com/dms/image/C4E0DAQHvtX4hlR3KNg/learning-public-crop_675_1200/0/1642774795329?e=1646956800&v=beta&t=7d4KaPH8K-HiaJaXs1qdoAasq7dGmSOFnIlcBu4xnOI
